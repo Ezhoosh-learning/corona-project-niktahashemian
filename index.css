@@ -1,0 +1,743 @@
+@font-face {
+    font-family: Nunito-Regular;
+    src: url(../fonts/Nunito-Regular.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: Nunito-Regular;
+}
+body{
+    padding: 30px 40px;
+
+}
+.header{
+    justify-content: space-between;
+    display: flex;
+    padding: 30px 40px;
+}
+.header-a a{
+    text-decoration: none;
+    color: rgb(17, 17, 80);
+}
+.header-btn{
+    background-color: rgb(44, 228, 167);
+    border-radius: 60px;
+    border: none;
+    padding: 10px;
+        margin: 10px;
+}
+.main-info{
+    display: flex;
+    
+}
+.main{
+    padding: 30px 100px;
+    
+}
+.main-corona{
+    display: flex;
+    
+    
+}
+.main-h1{
+    color:rgb(44, 228, 167) ;
+
+}
+.main-btn{
+    display: flex;
+    gap: 1.2rem;
+}
+.btn-one{
+    background-color: rgb(44, 228, 167);
+    color: white;
+    border: none;
+    border-radius: 60px;
+    padding: 10px;
+        margin: 10px;
+}
+.btn-two{
+    background-color: transparent;
+    border: 1.5px solid rgb(44, 228, 167);
+    color: var(--primary-color);
+    border-radius: 60px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.main-img{
+    background-color:rgb(44, 228, 167) ;
+    border-radius: 200px;
+    width: 250px;
+    height: 250px;
+    margin-left: 500px;
+    
+    
+}
+
+.statistics-selector-one{
+    border-radius: 60px;
+    padding: 10px;
+        margin: 10px;
+}
+.statistics-selector-two{
+    border-radius: 60px;
+    padding: 10px;
+        margin: 10px;
+}
+.btn{
+    border-radius: 60px;
+
+}
+.filter-bottom{
+    display: flex;
+    justify-content: space-between;
+}
+.stat1{
+    color: blue;
+}
+.stat2{
+    color: gold;
+}
+.Rank{
+    color:rgb(44, 228, 167) ;
+}
+
+.STATISTICS{
+    padding: 30px 40px;
+
+}
+
+.statistics{
+    color:rgb(44, 228, 167) ;
+}
+.statistics-btn{
+    border-radius: 60px;
+    background-color:rgb(44, 228, 167) ;
+    border: none;
+    padding: 10px;
+        margin: 10px;
+}
+.stat{
+    color: blue;
+}
+.stat1{
+    color:gold;
+}
+.Rank{
+    color: rgb(44, 228, 167);
+}
+.statistics-date{
+    display: flex;
+    justify-content: space-between;
+}
+.Statistics-today{
+    width: 100%;
+    max-width: 250px;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    background: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.Statistics-today-h2{
+    text-align: center;
+    border-bottom: 2px solid grey;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    color: black;
+}
+.Statistics-top{
+    display:flex ;
+    justify-content: space-between;
+}
+.Statistics-bottom{
+    display:flex ;
+    justify-content: space-between;
+}
+.Statistics-bottom{
+    color:green;
+}
+.stat1{
+    color:green;
+
+}
+.deat{
+    color:green;
+
+}
+.Infected{
+    color: goldenrod;
+}
+.Infected-now{
+    color:green;
+
+}
+.Statistics-today-total{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.Statistics-top .Statistics-bottom{
+    
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        gap: 10px;
+    }
+    .Infected{
+        display: flex;
+    flex-direction: column;
+    text-align: center;
+    }
+.STATISTICS-info{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 30px;
+}
+.chart{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.chart-h1{
+    color: rgb(44, 228, 167);
+    padding: 30px 40px;
+
+}
+.chart-container-title {
+    color: #06E6B2;
+    font-size: 1.8em;
+    padding: 60px 0 15px 65px;
+}
+
+.chart-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 0 60px;
+}
+.chart-content h4 {
+    color:blue;
+    font-size: 0.7em;
+    padding: 10px;
+    z-index: 3;
+}
+.y-labels {
+    float: left;
+    margin: 30px 5px 0 5px;
+    text-align: right;
+}
+.y-labels div {
+    height: 20px;
+    font-size: 0.6em;
+    line-height: right;
+}
+.first-chart {
+    float: left; /* شناور به سمت چپ */
+    margin-top: 250px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+
+.first-chart-detail ,
+.secound-chart-detail {
+    position: relative;
+    width: 300px;
+    height: 150px;
+    margin: 1px 0 0 19px;
+    border-left: 1px solid #999;
+    border-bottom: 1px solid #999;
+    height: 87%;
+    background: repeating-linear-gradient(to top, #eee 0px, #eee 1px,
+            transparent 1px, transparent 20px);
+}
+.points {
+    position: relative;
+    width: 7px;
+    height: 7px;
+    background-repeat: none;
+    background: #09cea0;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+#point-one {
+    left: 7%;
+    top: 87%;
+}
+
+#point-two {
+    left: 19%;
+    top: 64%;
+}
+
+#point-three {
+    left: 32%;
+    top: 70%;
+}
+
+#point-four {
+    left: 44.5%;
+    top: 42%;
+}
+
+#point-five {
+    left: 56.5%;
+    top: 26%;
+}
+
+#point-six {
+    left: 69.5%;
+    top: 42%;
+}
+
+#point-seven {
+    left: 81%;
+    top: 28%;
+}
+
+#point-eight {
+    left: 96%;
+    top: 11%;
+}
+.line {
+    position: relative;
+    height: 2px;
+    background: rgb(44, 228, 167);
+    transform-origin: left;
+    z-index: 1;
+}
+
+#line-one {
+    left: 7%;
+    top: 50%;
+    width: 49px;
+    transform: rotate(-38deg);
+}
+
+#line-two {
+    left: 19%;
+    top: 30%;
+    width: 41px;
+    transform: rotate(24deg);
+}
+
+#line-three {
+    left: 32%;
+    top: 40%;
+    width: 55px;
+    transform: rotate(-44deg);
+}
+
+#line-four {
+    left: 44.5%;
+    top: 15%;
+    width: 39px;
+    transform: rotate(-27deg);
+}
+
+#line-five {
+    left: 56.5%;
+    top: 1%;
+    width: 54px;
+    transform: rotate(41deg);
+}
+
+#line-six {
+    left: 69.5%;
+    top: 22.5%;
+    width: 37px;
+    transform: rotate(-25deg);
+}
+
+#line-seven {
+    left: 81%;
+    top: 11%;
+    width: 51px;
+    transform: rotate(-24deg);
+}
+.x-labels {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    padding-top: 5px;
+}
+
+.x-labels div {
+    width: 60px;
+    font-size: 0.5em;
+    text-align: center;
+    margin-right: 1%;
+}
+
+.secound-chart {
+    float:right; /* شناور به سمت چپ */
+    margin-top: 100px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.secound-points {
+    position: relative;
+    width: 7px;
+    height: 7px;
+    background-repeat: none;
+    background:black;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+#point-nine {
+    left: 6%;
+    top:19%;
+}
+#point-ten {
+    left: 19%;
+    top: 45%;
+}
+#point-eleven {
+    left: 31.5%;
+    top: 29%;
+}
+#point-twelve {
+    left: 44%;
+    top: 33%;
+}
+#point-thirteen {
+    left: 57%;
+    top: 14%;
+}
+#point-fourteen {
+    left: 69.5%;
+    top: 29%;
+}
+#point-fifteen {
+    left: 83%;
+    top: 37%;
+    background-color: tomato;
+}
+#point-sixteen {
+    left: 95%;
+    top: 64%;
+    background-color: tomato;
+}
+.secound-line {
+    position: relative;
+    height: 2px;
+    background:tomato;
+    transform-origin: left;
+    z-index: 1;
+}
+#line-eight {
+    left: 6%;
+    top: -17%;
+    width: 60px;
+    transform: rotate(50deg);
+}
+#line-nine {
+    left: 19%;
+    top: 11%;
+    width:43px;
+    transform: rotate(-24deg);
+}
+#line-ten {
+    left: 31%;
+    top: -1%;
+    width:42px;
+    transform: rotate(18deg);
+}
+#line-eleven{
+    left: 44%;
+    top: 6%;
+    width:42px;
+    transform: rotate(-29deg);
+}
+#line-twelve {
+    left: 57%;
+    top: -10%;
+    width:47px;
+    transform: rotate(39deg);
+}
+#line-thirteen {
+    left: 69%;
+    top: 8%;
+    width:44px;
+    transform: rotate(27deg);
+}
+#line-fourteen {
+    left: 83%;
+    top: 20%;
+    width:59px;
+    transform: rotate(53deg);
+}
+.chart-statistics {
+    height: 180px;
+    width: 300px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 6px 6px 15px #f1f1f1, -6px -6px 15px #f1f1f1;
+    padding: 15px 20px;
+    margin-left: 25px;
+}
+.chart-statistics h1 {
+    color: #06105e;
+    margin-bottom: 10px;
+    font-size: 0.9em;
+}
+
+.chart-statistics-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    row-gap: 20px;
+    column-gap: 15px;
+    padding: 15px 0;
+    font-size: 1.1em;
+}
+.Oders{
+    display: flex;
+    justify-content: space-between;
+}
+.Oders-btn{
+    background-color: rgb(44, 228, 167);
+    border-radius: 60px;
+    border: none;
+    padding: 10px;
+        margin: 10px;
+
+}
+.main-table{
+    text-align: center;
+    width: 100%;
+    table-layout: fixed;
+    min-width: 400px;
+    border-collapse: collapse;
+    
+    
+}
+.orders-table tr {
+    border-bottom: 1px solid #e5e4e4;
+    
+}
+
+.orders-table th,
+td {
+    padding: 8px 10px;
+    font-size: 14px;
+}
+
+.orders-table td {
+    color: #9e9d9d;
+}
+
+.orders-table th {
+    color: #06105e;
+}
+
+.orders-table td i {
+    color: #06105e;
+}
+
+.orders-table tr:last-child {
+    border-bottom: none;
+}
+
+.orders-button{
+    background-color: rgb(44, 228, 167);
+    border-radius: 60px;
+    border: none;
+    padding: 10px;
+    margin: 10px;
+    padding: 30px 40px;
+
+
+}
+.blog{
+    padding: 30px 40px;
+    display: flex;
+    
+}
+.BLOG h1{
+    color: rgb(44, 228, 167);
+
+}
+.images {
+    height: 100px;
+}
+
+.first-part img {
+    position: relative;
+    border-radius: 18px;
+    width: 340px;
+    height: 350px;
+}
+h4,
+.date,
+.name {
+    position: absolute;
+    color: white;
+    padding-left: 20px;
+    border-radius: 3px;
+}
+
+.first-part h4 {
+    border-left: 5px solid white;
+    z-index: 2;
+    top: 385px;
+}
+
+.date {
+    top: 435px;
+    left: 26px;
+    font-size: 0.8em
+}
+
+.name {
+    top: 435px;
+    left: 130px;
+    font-size: 0.8em;
+}
+
+.secound-part {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    margin-left: 15px;
+}
+
+.secound-part img {
+    width: 350px;
+    height: 150px;
+    border-radius: 18px;
+}
+
+.first-images,
+.image-wrapper {
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+}
+
+.first-image img {
+    width: 400px;
+    object-fit: cover;
+    border-radius: 18px;
+}
+
+.image-wrapper img {
+    width: 320px;
+    object-fit: cover;
+    border-radius: 18px;
+    height: 170px;
+}
+
+.first-image::after,
+.image-wrapper::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 70%;
+    border-radius: 18px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0)0%, rgba(0, 0, 0, 0.9)100%);
+    pointer-events: none;
+}
+
+.first-image {
+    position: relative;
+    display: inline-block;
+}
+.imgs{
+    display: flex;
+    padding: 30px 40px;
+
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 40px;
+
+}
+.footer-menu{
+    color:rgb(44, 228, 167) ;
+}
+.menu-a a{
+    text-decoration: none;
+    color: blue;
+}
+.about{
+    color:rgb(44, 228, 167) ;
+}
+.Lorem{
+    color: blue;
+}
+.input{
+    display: flex;
+    justify-content: space-between;
+}
+.Email{
+    border-radius: 750px;
+    margin-top: 70px;
+    padding: 10px 20px;
+
+}
+.button{
+    border-radius: 750px;
+    margin-top: 70px;
+    border: none;
+    background-color:rgb(44, 228, 167) ;
+    padding: 10px 20px;
+
+}
+.copy{
+    text-align: center;
+    background-color: rgb(202, 196, 196);
+    padding: 10px;
+    
+}
+@media (max-width: 991px) {
+    body {
+      font-size: 14px;
+      /* ... استایل‌های خاص تبلت ... */
+    }
+  }
+  @media (max-width: 1024px){
+  body  {
+    font-size: 16px;
+    /* ... سایر استایل‌های دسکتاپ ... */
+  }
+  
+}
+@media (min-width: 992px) { /* برای صفحه نمایش های بزرگتر از تبلت */
+    .button {
+      padding: 8px 16px; /* پدینگ کمتر */
+      font-size: 16px; /* اندازه فونت کمی کوچکتر */
+      min-width: auto; /* حذف حداقل عرض برای تاچ تارگت */
+      min-height: auto; /* حذف حداقل ارتفاع برای تاچ تارگت */
+    }
+  }
+  @media (min-width: 992px) { /* برای صفحه نمایش های بزرگتر از تبلت */
+    body {
+      font-size: 16px; /* اندازه فونت اصلی برای دسکتاپ */
+    }
+    h1 {
+      font-size: 2em; /* اندازه عنوان اصلی برای دسکتاپ */
+    }
+    h2 {
+      font-size: 1.8em; /* اندازه عنوان فرعی برای دسکتاپ */
+    }
+  }
+  # corona-project-niktahashemian index.htm img
+# corona-project-niktahashemian index.html img

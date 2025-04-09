@@ -705,13 +705,78 @@ h4,
     
 }
 
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    * {
+        box-sizing: border-box;
+    }
+    
+    main{
+        padding: 5px 
+    }
+
+    img.main-img{
+        margin-left: 20px; 
+    }
+    div.blog {
+        margin: 10px 20px;
+        display: block;
+    }
+
+    div.BLOG {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    div.BLOG h1 {
+        margin-left: 30%;
+        font-size: 2.2em;
+    }
+
+    .secound-part {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 0;
+        margin-left: 0;
+    }
+
+    div.first-part  {
+        position: absolute;
+        z-index: 4;
+        margin-top: 0px;
+        padding-left: 10px;
+    }
+
+    div.image-wrapper img
+     {
+        max-width: 100%;
+        min-width: auto;
+        height: auto;
+        position: relative;
+        display: block;
+    }
+    
+
+    
+
+    div.BLOG {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px){
     * {
         box-sizing: border-box;
     }
     
 } 
-
+/* Medium devices (landscape tablets, 768px and up) */
 @media  only screen and(min-width: 768px){
     * {
         box-sizing: border-box;
@@ -749,17 +814,145 @@ h4,
     div.header-btn {
         display: none;
     }
-    
 
-    div.STATISTICS-info {
+    div.main-corona {
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .main-h1 {
+        margin-top: 0;
+        margin-left: 7%;
+    }
+
+    .corona-content img {
+        width: 40em;
+        height: 40em;
+    }
+
+    .statistics-container {
         width: 80%;
         margin: 10% 0 0 27%;
     }
 
-    h1 .statistics {
+    .statistics {
         width: 100%;
         align-items: center;
         text-align: center;
+    }
+
+    #countries {
+        display: block;
+        width: 60%;
+    }
+
+    #date-select {
+        display: block;
+        width: 60%;
+        margin-bottom: 2%;
+    }
+
+    #first-filter-button {
+        margin-left: -40%;
+        text-align: center;
+    }
+
+    .numbers li {
+        padding: 30px 38px 10px 0;
+        width: 8%;
+        font-size: 0.9em;
+    }
+
+    .details li {
+        padding: 0 19px 20px 0;
+        width: 10%;
+        font-size: 0.9em;
+    }
+
+    .day-statistics {
+        width: 57%;
+        height: 190px;
+        overflow-y: hidden;
+    }
+
+
+
+    .chart-canvas {
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    .chart-statistics {
+        width: 62%;
+        height: 200px;
+        overflow-y: hidden;
+    }
+
+    .orders-container {
+        width: 63%;
+        margin-left: 20%;
+    }
+
+    .orders-table th,
+    td {
+        font-size: 0.7em;
+    }
+
+    .orders-title {
+        padding: 10px 15px;
+    }
+
+    
+
+    .date,
+    .name {
+        position: absolute;
+        z-index: 4;
+        margin-top: 0px;
+        padding-left: 30%;
+    }
+
+    .first-title,
+    .first-date,
+    .first-name,
+    .secound-title,
+    .secound-date,
+    .secound-name,
+    .third-title,
+    .third-date,
+    .third-name,
+    .fourth-title,
+    .fourth-date,
+    .fourth-name {
+        position: relative;
+        text-align: center;
+        left: 0;
+        top: -80px;
+        width: 70%;
+        display: block;
+        font-size: 0.9em;
+    }
+
+    
+
+    .square {
+        display: none;
+    }
+
+    .first-footer {
+        margin-top: 0;
+        margin-left: 30%;
+    }
+
+    .menu-container,
+    .about-us-container {
+        width: 60%;
+        text-align: center;
+    }
+
+    .inputs {
+        margin: 0 20% 10px 0;
     }
 
 }
